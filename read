@@ -1,0 +1,7 @@
+1、content-type  GBK
+2、must have android-support-v7-appcompat
+	git:https://github.com/lr635934333/musicApp-support-v7.git
+3、music-server
+	git:https://github.com/lr635934333/musicServer.git
+4、music-app
+	git:https://github.com/lr635934333/musicApp.git
