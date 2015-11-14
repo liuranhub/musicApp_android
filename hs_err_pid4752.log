@@ -1,0 +1,125 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=4752, tid=6012
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_25-b18) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.25-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000035d800):  JavaThread "Unknown thread" [_thread_in_vm, id=6012, stack(0x0000000002840000,0x0000000002940000)]
+
+Stack: [0x0000000002840000,0x0000000002940000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x31667a]
+V  [jvm.dll+0x267073]
+V  [jvm.dll+0x267cb3]
+V  [jvm.dll+0x288154]
+C  [kernel32.dll+0x9b940]
+C  [ntdll.dll+0x93398]
+C  [ntdll.dll+0x185c8]
+C  [ntdll.dll+0x29d2d]
+C  [ntdll.dll+0x191cf]
+C  [ntdll.dll+0x51248]
+V  [jvm.dll+0x206881]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000035d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6012, stack(0x0000000002840000,0x0000000002940000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.012 loading class java/lang/CharSequence done
+Event: 0.012 loading class java/lang/String done
+Event: 0.012 loading class java/lang/Class
+Event: 0.013 loading class java/lang/reflect/AnnotatedElement
+Event: 0.013 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.013 loading class java/lang/reflect/GenericDeclaration
+Event: 0.013 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.013 loading class java/lang/reflect/Type
+Event: 0.013 loading class java/lang/reflect/Type done
+Event: 0.013 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x000000013ff40000 - 0x000000013ff74000 	C:\Program Files\Java\jre1.8.0_25\bin\javaw.exe
+0x00000000773a0000 - 0x0000000077549000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077180000 - 0x000000007729f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd180000 - 0x000007fefd1ec000 	C:\Windows\system32\KERNELBASE.dll
+0x000007feff420000 - 0x000007feff4fb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefeb60000 - 0x000007fefebff000 	C:\Windows\system32\msvcrt.dll
+0x000007fefe9b0000 - 0x000007fefe9cf000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe440000 - 0x000007fefe56d000 	C:\Windows\system32\RPCRT4.dll
+0x00000000772a0000 - 0x000000007739a000 	C:\Windows\system32\USER32.dll
+0x000007fefe9d0000 - 0x000007fefea37000 	C:\Windows\system32\GDI32.dll
+0x000007fefe570000 - 0x000007fefe57e000 	C:\Windows\system32\LPK.dll
+0x000007fefe700000 - 0x000007fefe7c9000 	C:\Windows\system32\USP10.dll
+0x000007fefb760000 - 0x000007fefb954000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefd520000 - 0x000007fefd591000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefeb30000 - 0x000007fefeb5e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe330000 - 0x000007fefe439000 	C:\Windows\system32\MSCTF.dll
+0x0000000065f50000 - 0x0000000066022000 	C:\Program Files\Java\jre1.8.0_25\bin\msvcr100.dll
+0x00000000656f0000 - 0x0000000065f4a000 	C:\Program Files\Java\jre1.8.0_25\bin\server\jvm.dll
+0x000007fef5330000 - 0x000007fef5339000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefeae0000 - 0x000007fefeb2d000 	C:\Windows\system32\WS2_32.dll
+0x000007feff410000 - 0x000007feff418000 	C:\Windows\system32\NSI.dll
+0x000007fef9bb0000 - 0x000007fef9beb000 	C:\Windows\system32\WINMM.dll
+0x0000000077560000 - 0x0000000077567000 	C:\Windows\system32\PSAPI.DLL
+0x0000000069340000 - 0x000000006934f000 	C:\Program Files\Java\jre1.8.0_25\bin\verify.dll
+0x00000000656c0000 - 0x00000000656e8000 	C:\Program Files\Java\jre1.8.0_25\bin\java.dll
+0x00000000656a0000 - 0x00000000656b6000 	C:\Program Files\Java\jre1.8.0_25\bin\zip.dll
+0x000007fef8690000 - 0x000007fef87b5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:E:\adt-bundle-windows-x86\sdk\platforms\android-14\android.jar 
+java_command: com.music.test.MusicIo
+java_class_path (initial): F:\music\MusicApp\bin\classes;F:\music\appcompat_v7\libs\android-support-v7-appcompat.jar;F:\music\appcompat_v7\libs\android-support-v4.jar;F:\music\MusicApp\libs\gson-2.2.4.jar;F:\music\appcompat_v7\bin\appcompat_v7.jar;E:\adt-bundle-windows-x86\sdk\tools\support\annotations.jar;F:\music\MusicApp\libs\android-support-v4.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\ATI Technologies\ATI.ACE\Core-Static
+USERNAME=sony
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 10467624k(6961036k free), swap 20933388k(16446208k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.25-b02) for windows-amd64 JRE (1.8.0_25-b18), built on Oct  7 2014 14:25:37 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Feb 03 10:29:13 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

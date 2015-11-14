@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bf_player_activity_order_background" >
+
+    <RelativeLayout
+        android:id="@+id/windowHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/bf_player_pager_first_text_bg">
+        <TextView
+            android:id="@+id/windowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:text="播放队列"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/clearOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/bf_player_activity_order_delete" />
+
+        <ImageView
+            android:id="@+id/palyerMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/clearOrder"
+            android:paddingTop="5dp"
+            android:src="@drawable/bf_playmode_repeate_all" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/windowHead" >
+
+        <LinearLayout
+            android:id="@+id/musicOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

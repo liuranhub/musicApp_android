@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/bf_munu_background3"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.music.activity.PlayerActivity" >
+
+    <RelativeLayout
+        android:id="@+id/netmusic_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#12a3d9" >
+
+        <RelativeLayout
+            android:id="@+id/netmusic_login"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:onClick="userLoginOnClick"
+                android:src="@drawable/localmusic_login_src_x" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/localmusic_setting_x" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

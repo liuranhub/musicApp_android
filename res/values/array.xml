@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="order_music_contral">
+        <item>在歌单中删除该歌曲？</item>
+        <item>修改</item>
+    </array>
+
+    <array name="order_lsit_contral">
+        <item>删除该歌单</item>
+        <item>修改歌单名</item>
+    </array>
+    
+</resources>

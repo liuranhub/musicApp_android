@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@color/white"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.music.activity.PlayerActivity" >
+
+    <RelativeLayout
+        android:id="@+id/netmusic_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#12a3d9" >
+
+        <RelativeLayout
+            android:id="@+id/netmusic_login"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:onClick="backOnClick"
+             >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/net_back_pressed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/back"
+                android:textSize="17sp"
+                android:text="返回" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/localmusic_setting_x"
+                android:onClick="settingOnClick" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/netmusic_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="5dp" >
+
+        <ImageView
+            android:id="@+id/order_list_bottom_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:onClick="gotoPlayerActivityOnClick"
+            android:src="@drawable/kg_ic_playing_bar_image_default" />
+
+        <ImageView
+            android:id="@+id/order_list_buttom_order"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@id/order_list_bottom_image"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="orderOnClick"
+            android:src="@drawable/localmusic_contral_order_x" />
+
+        <ImageView
+            android:id="@+id/order_list_buttom_next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@id/order_list_bottom_image"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/order_list_buttom_order"
+            android:onClick="nextOnClick"
+            android:src="@drawable/localmusic_contral_next_x" />
+
+        <ImageView
+            android:id="@+id/order_list_bottom_pause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/order_list_bottom_image"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/order_list_buttom_next"
+            android:background="@drawable/localmusic_contral_pause_stop_x"
+            android:onClick="pauseOnClick" />
+
+        <TextView
+            android:id="@+id/order_list_bottom_musicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/order_list_bottom_pause"
+            android:layout_toRightOf="@id/order_list_bottom_image"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="MusicName" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/netmusic_topText"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/netmusic_top"
+        android:layout_height="45dp"
+        >
+        <TextView 
+            android:id="@+id/netmusic_toptext_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌单内容"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/menu_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/netmusic_bottom"
+        android:layout_below="@id/netmusic_topText"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/netmusic_context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

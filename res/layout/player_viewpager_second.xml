@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+    <ImageView
+        android:id="@+id/player_downdload"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bf_player_menu_download"
+        android:onClick="downloadOnClick"
+         />
+
+    <ImageView
+        android:id="@+id/player_like"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@id/player_downdload"
+        android:src="@drawable/bf_player_like" 
+        android:onClick="likeButtonOnClick"/>
+
+    <ImageView
+        android:id="@+id/player_share"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/player_downdload"
+        android:src="@drawable/bf_player_menu_share"
+        android:onClick="shareOnClick"
+         />
+
+    <ScrollView
+        android:id="@+id/musicLyric"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:layout_above="@id/player_downdload"
+		android:layout_marginBottom="30dp"
+		android:layout_marginTop="20dp"
+		android:scrollbars="none"
+        android:layout_alignParentLeft="true" >
+
+        <LinearLayout
+            android:id="@+id/musicLyricLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/palyer_contral_lyric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bf_player_contral_lyric_clear"
+        android:layout_marginRight="15dp"
+        android:layout_above="@id/player_downdload"
+        android:layout_alignParentRight="true" 
+        android:onClick="contralLyricOnClick"
+        />
+
+</RelativeLayout>

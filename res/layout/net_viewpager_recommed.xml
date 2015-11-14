@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/search_button_x"
+        android:onClick="submitOnClick"
+        android:text="搜索" />
+
+    <EditText
+        android:id="@+id/word_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/submit"
+        android:background="@drawable/search_edittext_background_x"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/net_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/netmusic_bottom"
+        android:layout_below="@id/submit"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/searchmusic_context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

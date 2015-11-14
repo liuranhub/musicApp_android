@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.music.musicapp"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.music.activity.MenuActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.music.activity.PlayerActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.music.activity.UserRegisterActivity" >
+        </activity>
+        <activity android:name="com.music.activity.UserLoginActivity" >
+        </activity>
+        <!-- 还好意思找原因   没有注册还好意思 -->
+        <service android:name="com.music.service.AutoPlayService" >
+        </service>
+        <service android:name="com.music.service.MusicPlayerService" >
+        </service>
+        <service android:name="com.music.service.DownloadMusicService" >
+        </service>
+
+        <activity
+            android:name="com.music.activity.LocalMusicActivity"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <service android:name="com.music.service.UpdateOrderService" >
+        </service>
+        <service android:name="com.music.service.WriteFileService_Music" >
+        </service>
+
+        <activity android:name="com.music.activity.SystemOrderActivity" >
+        </activity>
+        <activity android:name="com.music.activity.OrderCreateActivity" >
+        </activity>
+
+        <service android:name="com.music.service.WriteFileService_Order" >
+        </service>
+        <service android:name="com.music.service.ScanMusicService" >
+        </service>
+
+        <activity
+            android:name="com.music.activity.OrderListActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.music.activity.OrderMusicActivity" >
+        </activity>
+        <activity android:name="com.music.activity.OrderAddmusicActivity" >
+        </activity>
+        <activity android:name="com.music.activity.OrderListDeleteActivity" >
+        </activity>
+        <activity android:name="com.music.activity.DownloadActivity" >
+        </activity>
+        <activity android:name="com.music.activity.LikeAddmusicActivity" >
+        </activity>
+        <activity android:name="com.music.activity.SettingActivity" >
+        </activity>
+        <activity android:name="com.music.activity.NetActivity" >
+        </activity>
+        <activity android:name="com.music.activity.NetMusicActivity" >
+        </activity>
+
+        <service android:name="com.music.service.AutoLoginService" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+     >
+
+   <RelativeLayout
+        android:id="@+id/list_letter_real"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/net_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/net_tab" >
+
+        <LinearLayout
+            android:id="@+id/list_letters"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_content_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/net_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/net_tab"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/list_letter_real" >
+
+        <ScrollView
+            android:id="@+id/menu_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/netmusic_context"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
